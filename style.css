@@ -220,6 +220,11 @@ body {
    width: 30%;
 }
 
+#vendas-h3 {
+   margin-top: 5vh;
+   margin-bottom: 2vh;
+}
+
 /*
 
    font-family: 'Nunito Sans', sans-serif;

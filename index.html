@@ -132,12 +132,18 @@
                      <button class="btn btn-primary">Criar</button>
                      <button class="btn btn-primary">Publicar</button>
                   </div>
-
                </form>
+            </div>
+            
+            <h3 id="vendas-h3">Vendas</h3>
+            <div class="card">
+               <div class="dar-body">
+                  <canvas id="relatorio">
 
+                  </canvas>
+               </div>
             </div>
          </div>
-         <h3>fdfdsfds</h3>
 
       </div>
    </div>
@@ -154,6 +160,23 @@
          event.preventDefault();
          $("#wrapper").toggleClass("toggled");
       });
+
+   </script>
+   <script src="js/chart/Chart.min.js"></script>
+   <script>
+      const context = document.getElementById("relatorio").getContext('2d');
+      const grafico = new Chart(context, {
+         type: 'line',
+         data: {
+            labels: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul'],
+            datasets: [{
+               label: 'Vendas - Mes',
+               backgroundColor: "#5898d9ff",
+               borderColor:  "#5898d9ff",
+               data: [50, 60, 41, 39, 70, 96, 10]
+            }]
+         }
+      })
 
    </script>
 </body>
