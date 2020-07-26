@@ -85,7 +85,7 @@ body {
    padding-left: 1.2%;
 }
 
-.my-navbar-form-field {
+.my-form-field {
    border-radius: 9px;
    border-width: 1px;
    border-color: #bacad6ff;
@@ -95,7 +95,7 @@ body {
    font-size: 16px;
 }
 
-.my-navbar-form-field::placeholder {
+.my-form-field::placeholder {
    color: #c4c8ccff;
    font-family: 'Nunito Sans', sans-serif;
    font-size: 16px;
